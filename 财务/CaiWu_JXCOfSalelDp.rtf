@@ -1,0 +1,286 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 CREATE DEFINER=`root`@`%` PROCEDURE `CaiWu_JXCOfSalelDp`(in QCMONT VARCHAR (50) ,  in  startdate VARCHAR (50) , in enddate VARCHAR (50))\
+BEGIN\
+\
+SELECT\
+	(\
+		SELECT\
+			NAME\
+		FROM\
+			e_base_goodssupplier a\
+		WHERE\
+			a.id = SUPPLIER_ID\
+	) '
+\f1 \'b9\'a9\'d3\'a6\'c9\'cc\'c3\'fb\'b3\'c6
+\f0 ',\
+	(\
+		SELECT\
+			NAME\
+		FROM\
+			e_base_goodscategory a\
+		WHERE\
+			a.SORT = CATEGORY_ID\
+	) '
+\f1 \'c6\'b7\'d6\'d6\'c3\'fb\'b3\'c6
+\f0 ' ,\
+   GOODS_NAME '
+\f1 \'c9\'cc\'c6\'b7\'c3\'fb\'b3\'c6
+\f0 ',\
+	GOODS_CODE '
+\f1 \'c9\'cc\'c6\'b7\'b4\'fa\'c2\'eb
+\f0 (
+\f1 \'c7\'b0\'c1\'f9
+\f0 )',\
+	AFTERSALESSUPPORT_PRICE '
+\f1 \'b3\'c9\'b1\'be
+\f0 ',\
+  (SELECT `NAME` FROM e_sys_department\
+  WHERE id=DEPART_ID) '
+\f1 \'b2\'bf\'c3\'c5\'c3\'fb\'b3\'c6
+\f0 '     ,\
+	ifnull(\
+		sum(CASE WHEN flang = 0 THEN q3 END),\
+		0\
+	) AS '
+\f1 \'c6\'da\'b3\'f5\'ca\'fd\'c1\'bf
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 0 THEN s3 END),\
+		0\
+	) AS '
+\f1 \'c6\'da\'b3\'f5\'ca\'fd\'c1\'bf\'bd\'f0\'b6\'ee
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 1 THEN q3 END),\
+		0\
+	) AS '
+\f1 \'b5\'f7\'b2\'a6\'c8\'eb\'ca\'fd\'c1\'bf
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 1 THEN s3 END),\
+		0\
+	) AS '
+\f1 \'b5\'f7\'b2\'a6\'c8\'eb\'ca\'fd\'c1\'bf\'bd\'f0\'b6\'ee
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 2 THEN q3 END),\
+		0\
+	) AS '
+\f1 \'cd\'cb\'bb\'f5\'c8\'eb\'ca\'fd\'c1\'bf
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 2 THEN s3 END),\
+		0\
+	) AS '
+\f1 \'cd\'cb\'bb\'f5\'c8\'eb\'ca\'fd\'c1\'bf\'bd\'f0\'b6\'ee
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 3 THEN q3 END),\
+		0\
+	) AS '
+\f1 \'cf\'fa\'ca\'db\'b3\'f6\'bf\'e2\'ca\'fd\'c1\'bf
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 3 THEN s3 END),\
+		0\
+	) AS '
+\f1 \'cf\'fa\'ca\'db\'b3\'f6\'bf\'e2\'ca\'fd\'c1\'bf\'bd\'f0\'b6\'ee
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 4 THEN q3 END),\
+		0\
+	) AS '
+\f1 \'b5\'f7\'b2\'a6\'b3\'f6\'ca\'fd\'c1\'bf
+\f0 ',\
+	ifnull(\
+		sum(CASE WHEN flang = 4 THEN s3 END),\
+		0\
+	) AS '
+\f1 \'b5\'f7\'b2\'a6\'b3\'f6\'ca\'fd\'c1\'bf\'bd\'f0\'b6\'ee
+\f0 '\
+FROM\
+	(\
+		(\
+			SELECT\
+				a.SUPPER_ID AS SUPPLIER_ID,\
+				a.CATEGORY_ID,\
+				a.GOODS_NAME,\
+				LEFT (a.GOODS_CODE, 8) AS GOODS_CODE,\
+				a.AFTERSALESSUPPORT_PRICE,\
+				a.DEPART_ID,\
+				SUM(a.QUANTITY) AS q3,\
+				SUM(a.AFTERSALESSUPPORT_PRICE) AS s3,\
+				0 AS flang\
+			FROM\
+				e_stock_stockmonthremains a\
+			WHERE\
+				a.DATA_MONTH = QCMONT\
+			AND a.DEPART_ID <> '3b70bfd9cb264ecbaee9fe6d6c8a7a5e'\
+			GROUP BY\
+				SUPPER_ID,\
+				CATEGORY_ID,\
+				GOODS_NAME,\
+				LEFT (a.GOODS_CODE, 8),\
+				AFTERSALESSUPPORT_PRICE,\
+				DEPART_ID\
+		)\
+		UNION ALL\
+			(\
+				-- 
+\f1 \'c3\'c5\'b5\'ea\'c1\'a3\'b6\'c8
+\f0   
+\f1 \'b5\'f7\'b2\'a6\'c8\'eb
+\f0 \
+				SELECT\
+					b.SUPPLIER_ID,\
+					b.CATEGORY_ID,\
+					b.GOODS_NAME,\
+					LEFT (b.GOODS_CODE, 8) AS GOODS_CODE,\
+					b.AFTERSALESSUPPORT_PRICE,\
+					a.RECEIVEDEPART_ID,\
+					SUM(b.ALLO_QUANTITY) AS q3,\
+					SUM(b.AFTERSALESSUPPORT_PRICE) AS s3,\
+					1 AS flang\
+				FROM\
+					e_allo_allocation a,\
+					e_allo_allocationgoodsinfo b\
+				WHERE\
+					a.BIIL_NO = b.BIIL_NO\
+				AND a.RECEIVEDEPART_ID <> '3b70bfd9cb264ecbaee9fe6d6c8a7a5e'\
+				AND a.RECEIVE_DATE >= startdate\
+				AND a.RECEIVE_DATE < DATE_ADD(enddate,INTERVAL 1 DAY)\
+				AND a.`STATUS` IN ('5', '6')\
+				GROUP BY\
+					SUPPLIER_ID,\
+					CATEGORY_ID,\
+					GOODS_NAME,\
+					LEFT (b.GOODS_CODE, 8),\
+					AFTERSALESSUPPORT_PRICE,\
+					RECEIVEDEPART_ID\
+			)\
+		UNION ALL\
+			(\
+				-- 
+\f1 \'c3\'c5\'b5\'ea\'c1\'a3\'b6\'c8
+\f0    
+\f1 \'cd\'cb\'bb\'f5\'c8\'eb
+\f0   
+\f1 \'bd\'f8\'c8\'eb\'c3\'c5\'b5\'ea\'d6\'d0\'d0\'c4\'b2\'d6
+\f0  
+\f1 \'b2\'bb\'bf\'bc\'c2\'c7\'c9\'f3\'ba\'cb\'d7\'b4\'cc\'ac
+\f0 \
+				SELECT\
+					b.SUPPLIER_ID,\
+					b.CATEGORY_ID,\
+					b.GOODS_NAME,\
+					LEFT (b.GOODS_CODE, 8) AS GOODS_CODE,\
+					b.AFTERSALESSUPPORT_PRICE,\
+					a.DEPART_ID,\
+					SUM(b.QUANTITY) AS q3,\
+					SUM(b.AFTERSALESSUPPORT_PRICE) AS s3,\
+					2 AS flang\
+				FROM\
+					e_bill_returngoods a,\
+					e_bill_returngoodsinfo b\
+				WHERE\
+					a.BILL_NO = b.BILL_NO\
+				AND a.BILL_DATE >= startdate\
+				AND a.BILL_DATE < DATE_ADD(enddate,INTERVAL 1 DAY)\
+				GROUP BY\
+					SUPPLIER_ID,\
+					CATEGORY_ID,\
+					GOODS_NAME,\
+					LEFT (b.GOODS_CODE, 8),\
+					AFTERSALESSUPPORT_PRICE,\
+					DEPART_ID\
+			)\
+		UNION ALL\
+			(\
+				-- 
+\f1 \'d6\'bb\'bf\'bc\'c2\'c7\'d6\'d0\'d0\'c4\'b2\'d6\'b3\'f6\'bf\'e2\'b5\'c4\'cf\'fa\'ca\'db\'b3\'f6\'bf\'e2
+\f0   \
+				SELECT\
+					b.SUPPLIER_ID,\
+					b.CATEGORY_ID,\
+					b.GOODS_NAME,\
+					LEFT (b.GOODS_CODE, 8) AS GOODS_CODE,\
+					b.AFTERSALESSUPPORT_PRICE,\
+					a.DEPART_ID,\
+					SUM(0 - b.QUANTITY) AS q3,\
+					SUM(\
+						0 - b.AFTERSALESSUPPORT_PRICE\
+					) AS s3,\
+					3 AS flang\
+				FROM\
+					e_bill_centeroutstorage a,\
+					e_bill_centeroutstorageinfo b\
+				WHERE\
+					a.BILL_NO = b.BILL_NO\
+				AND a.BILL_DATE >= startdate\
+				AND a.BILL_DATE < DATE_ADD(enddate,INTERVAL 1 DAY)\
+				AND a.STOCK_TYPE = '1'\
+				AND a.CLASSIFY = '0'\
+				AND a.DEPART_ID <> '3b70bfd9cb264ecbaee9fe6d6c8a7a5e'\
+				GROUP BY\
+					SUPPLIER_ID,\
+					CATEGORY_ID,\
+					GOODS_NAME,\
+					LEFT (b.GOODS_CODE, 8),\
+					AFTERSALESSUPPORT_PRICE,\
+					DEPART_ID\
+			)\
+		UNION ALL\
+			(\
+				-- 
+\f1 \'c3\'c5\'b5\'ea\'c1\'a3\'b6\'c8
+\f0   
+\f1 \'b5\'f7\'b2\'a6\'b3\'f6
+\f0 \
+				SELECT\
+					b.SUPPLIER_ID,\
+					b.CATEGORY_ID,\
+					b.GOODS_NAME,\
+					LEFT (b.GOODS_CODE, 8) AS GOODS_CODE,\
+					b.AFTERSALESSUPPORT_PRICE,\
+					a.OUTDEPART_ID,\
+					SUM(0 - b.ALLO_QUANTITY) AS q3,\
+					SUM(\
+						0 - b.AFTERSALESSUPPORT_PRICE\
+					) AS s3,\
+					4 AS flang\
+				FROM\
+					e_allo_allocation a,\
+					e_allo_allocationgoodsinfo b\
+				WHERE\
+					a.BIIL_NO = b.BIIL_NO\
+				AND a.OUTDEPART_ID <> '3b70bfd9cb264ecbaee9fe6d6c8a7a5e'\
+				AND a.ALLO_DATE >= startdate\
+				AND a.ALLO_DATE < DATE_ADD(enddate,INTERVAL 1 DAY)\
+				GROUP BY\
+					SUPPLIER_ID,\
+					CATEGORY_ID,\
+					GOODS_NAME,\
+					LEFT (b.GOODS_CODE, 8),\
+					AFTERSALESSUPPORT_PRICE,\
+					OUTDEPART_ID\
+			)\
+	) mt1\
+GROUP BY\
+	SUPPLIER_ID,\
+	CATEGORY_ID,\
+	GOODS_NAME,\
+	GOODS_CODE,\
+	AFTERSALESSUPPORT_PRICE,\
+	DEPART_ID\
+ORDER BY\
+	DEPART_ID,\
+	GOODS_NAME,\
+  CATEGORY_ID,\
+  SUPPLIER_ID ;\
+ END}
