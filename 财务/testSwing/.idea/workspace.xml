@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="testSwing:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09029cd5-48dd-46c0-9d14-14c5385bf1ae" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="testSwing" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/apache-maven-3.6.3/repository" />
+        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WO1RAQBWTkBqP4pZwp1TNOlH1z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.panelNew">
+    <configuration name="excelDeleteRow" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="excelDeleteRow" />
+      <module name="testSwing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="panel" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="panel" />
+      <module name="testSwing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="panelNew" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="panelNew" />
+      <module name="testSwing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map>
+                <entry key="test" value="false" />
+              </map>
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.panel" />
+      <item itemvalue="Application.panelNew" />
+      <item itemvalue="Application.excelDeleteRow" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09029cd5-48dd-46c0-9d14-14c5385bf1ae" name="Default Changelist" comment="" />
+      <created>1579005816420</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579005816420</updated>
+      <workItem from="1579005820467" duration="3710000" />
+      <workItem from="1579048274100" duration="184000" />
+      <workItem from="1579048473861" duration="19889000" />
+      <workItem from="1579078888128" duration="1976000" />
+      <workItem from="1579135461302" duration="586000" />
+      <workItem from="1579136072539" duration="10971000" />
+      <workItem from="1579221600772" duration="5837000" />
+      <workItem from="1579233114385" duration="80000" />
+      <workItem from="1579240714238" duration="7252000" />
+      <workItem from="1579481139329" duration="2083000" />
+      <workItem from="1579744047102" duration="1915000" />
+      <workItem from="1579748775612" duration="9287000" />
+      <workItem from="1579767628160" duration="451000" />
+      <workItem from="1579768202378" duration="109000" />
+      <workItem from="1579768329853" duration="215000" />
+      <workItem from="1581500487269" duration="5000" />
+      <workItem from="1582118975670" duration="661000" />
+      <workItem from="1582163286609" duration="325000" />
+      <workItem from="1582180844957" duration="13084000" />
+      <workItem from="1583309034951" duration="1092000" />
+      <workItem from="1583328941677" duration="461000" />
+      <workItem from="1583760423864" duration="197000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="471" y="238" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1579076345682">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="471" y="238" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1280.760@0.0.1280.760" timestamp="1579076345682" />
+    <state x="276" y="127" width="816" height="556" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579749275072">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="276" y="127" width="816" height="556" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1579749275072" />
+    <state x="414" y="174" width="1092" height="749" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579008349495" />
+    <state x="390" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1579768311101">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="390" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.760@0.0.1280.760" timestamp="1579768311101" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1579008956486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579008956486" />
+    <state x="459" y="242" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579749273243">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="459" y="242" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.760@0.0.1280.760" timestamp="1579749273243" />
+    <state x="689" y="331" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579008319729" />
+    <state x="508" y="82" key="#xdebugger.evaluate" timestamp="1579752019838">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="508" y="82" key="#xdebugger.evaluate/0.0.1280.760@0.0.1280.760" timestamp="1579752019838" />
+    <state width="439" height="438" key="DebuggerActiveHint" timestamp="1579755176775">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="439" height="438" key="DebuggerActiveHint/0.0.1280.760@0.0.1280.760" timestamp="1579755176775" />
+    <state x="128" y="244" key="FileChooserDialogImpl" timestamp="1579768309296">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="128" y="244" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1579768309296" />
+    <state x="192" y="337" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579006720327" />
+    <state width="1238" height="223" key="GridCell.Tab.0.bottom" timestamp="1583310495972">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1579766594971" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579009553692" />
+    <state width="1238" height="223" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1583310495972" />
+    <state width="1238" height="223" key="GridCell.Tab.0.center" timestamp="1583310495971">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1579766594971" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579009553692" />
+    <state width="1238" height="223" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1583310495971" />
+    <state width="1238" height="223" key="GridCell.Tab.0.left" timestamp="1583310495970">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1579766594971" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579009553692" />
+    <state width="1238" height="223" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1583310495970" />
+    <state width="1238" height="223" key="GridCell.Tab.0.right" timestamp="1583310495971">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1579766594971" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579009553692" />
+    <state width="1238" height="223" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1583310495971" />
+    <state width="1238" height="223" key="GridCell.Tab.1.bottom" timestamp="1583310495974">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1238" height="181" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1579759574881" />
+    <state width="1238" height="223" key="GridCell.Tab.1.bottom/0.23.1280.727@0.23.1280.727" timestamp="1583310495974" />
+    <state width="1238" height="223" key="GridCell.Tab.1.center" timestamp="1583310495973">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1238" height="181" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1579759574881" />
+    <state width="1238" height="223" key="GridCell.Tab.1.center/0.23.1280.727@0.23.1280.727" timestamp="1583310495973" />
+    <state width="1238" height="223" key="GridCell.Tab.1.left" timestamp="1583310495972">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1238" height="181" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1579759574881" />
+    <state width="1238" height="223" key="GridCell.Tab.1.left/0.23.1280.727@0.23.1280.727" timestamp="1583310495972" />
+    <state width="1238" height="223" key="GridCell.Tab.1.right" timestamp="1583310495973">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state width="1238" height="181" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1579759574881" />
+    <state width="1238" height="223" key="GridCell.Tab.1.right/0.23.1280.727@0.23.1280.727" timestamp="1583310495973" />
+    <state x="177" y="79" width="936" height="681" key="Maven.ArtifactSearchDialog" timestamp="1579058077089">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="177" y="79" width="936" height="681" key="Maven.ArtifactSearchDialog/0.0.1280.760@0.0.1280.760" timestamp="1579058077089" />
+    <state x="244" y="0" key="SettingsEditor" timestamp="1579768298962">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="244" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1579768298962" />
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579006892649" />
+    <state width="646" height="386" key="XDebugger.FullValuePopup" timestamp="1579224280343">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="646" height="386" key="XDebugger.FullValuePopup/0.0.1280.760@0.0.1280.760" timestamp="1579224280343" />
+    <state x="336" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1583414753864">
+      <screen x="0" y="23" width="1280" height="727" />
+    </state>
+    <state x="336" y="208" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1579768329743" />
+    <state x="336" y="222" key="com.intellij.ide.util.TipDialog/0.23.1280.727@0.23.1280.727" timestamp="1583414753864" />
+    <state x="371" y="151" key="extract.method.dialog" timestamp="1579137948271">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="371" y="151" key="extract.method.dialog/0.0.1280.760@0.0.1280.760" timestamp="1579137948271" />
+    <state x="302" y="175" width="672" height="677" key="run.anything.popup" timestamp="1579755369091">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="302" y="175" width="672" height="677" key="run.anything.popup/0.0.1280.760@0.0.1280.760" timestamp="1579755369091" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panel.java</url>
+          <line>394</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panel.java</url>
+          <line>396</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panelNew.java</url>
+          <line>293</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panelNew.java</url>
+          <line>295</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panelNew.java</url>
+          <line>297</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panelNew.java</url>
+          <line>275</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panelNew.java</url>
+          <line>276</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panelNew.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/excelDeleteRow.java</url>
+          <line>171</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/excelDeleteRow.java</url>
+          <line>202</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panel.java</url>
+          <line>392</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panel.java</url>
+          <line>315</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/panelNew.java</url>
+          <line>253</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="cellValue1" language="JAVA" />
+        <watch expression="cellValue2" language="JAVA" />
+        <watch expression="cellValue1.equals(cellValue2)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
